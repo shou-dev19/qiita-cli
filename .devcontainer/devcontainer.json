@@ -1,57 +1,64 @@
 {
-  "name": "Devcontainer for Claude Code and Gemini CLI",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "TZ": "${localEnv:TZ:America/Los_Angeles}",
-      "CLAUDE_CODE_VERSION": "latest",
-      "GIT_DELTA_VERSION": "0.18.2",
-      "ZSH_IN_DOCKER_VERSION": "1.2.0"
-    }
+  "name": "AI Agent Workspace (Node.js/TS)",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+  // 認証情報を含む設定ファイル (.claude.json) をボリューム内に置き、リビルド後も認証を維持する
+  "containerEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude"
   },
-  "runArgs": [
-    "--cap-add=NET_ADMIN",
-    "--cap-add=NET_RAW"
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "mounts": [
+    {
+      "source": "ai-dev-claude-config",
+      "target": "/home/node/.claude",
+      "type": "volume"
+    },
+    {
+      "source": "ai-dev-gemini-config",
+      "target": "/home/node/.gemini",
+      "type": "volume"
+    },
+    {
+      "source": "ai-dev-codex-config",
+      "target": "/home/node/.codex",
+      "type": "volume"
+    },
+    {
+      "source": "ai-dev-gh-config",
+      "target": "/home/node/.config/gh",
+      "type": "volume"
+    },
+    {
+      "source": "ai-dev-gcloud-config",
+      "target": "/home/node/.config/gcloud",
+      "type": "volume"
+    }
   ],
+  // Docker起動時に .env ファイルを読み込ませる設定（.envが存在しない場合があるためデフォルトはコメントアウト）
+  // "runArgs": [
+  //   "--env-file",
+  //   ".env"
+  // ],
   "customizations": {
     "vscode": {
+      // コンテナ起動時に自動で入れたいVS Code拡張機能
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "eamodio.gitlens"
+        "ms-vscode.vscode-typescript-next",
+        "mechatroner.rainbow-csv"
       ],
       "settings": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": "explicit"
-        },
-        "terminal.integrated.defaultProfile.linux": "zsh",
-        "terminal.integrated.profiles.linux": {
-          "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-          },
-          "zsh": {
-            "path": "zsh"
-          }
-        }
+        "terminal.integrated.defaultProfile.linux": "bash"
       }
     }
   },
+  // コンテナユーザーをnode(非root)に設定
   "remoteUser": "node",
-  "mounts": [
-    "source=claude-code-bashhistory-${devcontainerId},target=/commandhistory,type=volume",
-    "source=claude-code-config-${devcontainerId},target=/home/node/.claude,type=volume",
-    "source=gemini-config,target=/home/node/.gemini,type=volume",
-    "source=${localWorkspaceFolder}/credentials.json,target=/home/node/.config/qiita-cli/credentials.json,type=bind"
-  ],
-  "containerEnv": {
-    "NODE_OPTIONS": "--max-old-space-size=4096",
-    "CLAUDE_CONFIG_DIR": "/home/node/.claude",
-    "POWERLEVEL9K_DISABLE_GITSTATUS": "true"
-  },
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
-  "workspaceFolder": "/workspace",
-  // "postCreateCommand": "sudo /usr/local/bin/init-firewall.sh",
+  // コンテナ作成後に実行されるコマンド
+  // ここでClaudeCodeやAntigravityCLIをグローバルインストールします
+  "postCreateCommand": "bash .devcontainer/setup.sh"
 }
