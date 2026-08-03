@@ -1,3 +1,21 @@
+# Qiita CLI
 .remote
-node_modules
 credentials.json
+
+# Node
+node_modules
+
+# 環境変数（devcontainer の --env-file 用。認証情報を含みうる）
+.env
+.env.*
+
+# 記事のソース素材（公開対象は public/ のみ）
+input/
+
+# エージェント関連のローカル設定
+.claude/settings.local.json
+CLAUDE.local.md
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
