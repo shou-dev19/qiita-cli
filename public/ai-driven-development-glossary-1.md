@@ -113,8 +113,10 @@ agreed_posting_campaign_term: false
 ——**これから説明する用語は、全部この「どうしますか？」への答えです。**
 
 ![図2 新入社員メタファーの全体像](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-fig02.png)
+*図2｜AIエージェントを「新入社員」として捉える全体像。外側の円がハーネス*
 
 この図の「一番外側の円」が、後編の主役です。前編ではまず、**円の中身**をひとつずつ埋めていきます。
+
 
 ---
 
@@ -127,8 +129,10 @@ agreed_posting_campaign_term: false
 :::
 
 ![図3 AI駆動開発の年表](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-fig03.png)
+*図3｜補完からエージェント、そしてハーネスへ。AI駆動開発の進化*
 
 ### 第1世代：補完（〜2022年）「続きを書いてくれる」
+
 
 GitHub Copilot に代表される、**コード補完**の時代です。
 
@@ -147,8 +151,10 @@ ChatGPT の登場で、AIと**対話**できるようになりました。設計
 コピペの往復が地獄でした。「そのファイルの中身はこれです」「じゃあこう直して」「エラーが出ました、これです」……**人間が、AIとファイルシステムの間の通訳をやっていた**わけです。
 
 ![図4 コピペ往復地獄](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-fig04.png)
+*図4｜チャットAIとファイルの間を、人間がコピペで往復していた時代*
 
 ### 第3世代：エージェント（2024〜2025年前半）「手足を持った」
+
 
 ここが**最大の分岐点**です。
 
@@ -159,10 +165,12 @@ AIに「**ツール**」が与えられました。ファイルを読むツー�
 そしてエージェントが回している輪っかが **エージェンティックループ（Agentic Loop）** です。
 
 ![図5 エージェンティックループ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-fig05.png)
+*図5｜情報を集め、実行し、検証して繰り返すエージェンティックループ*
 
 **この図5は、前編・後編を通していちばん大事な図です。**
 
 これから出てくる用語のほとんどは、「このループのどこに、何を差し込むか」の話だからです。困ったらこの図に戻ってきてください。
+
 
 #### そして、バイブコーディングの時代へ
 
@@ -248,10 +256,12 @@ AIに「**ツール**」が与えられました。ファイルを読むツー�
 結果どうなるか。**デプロイなんてしない日も、毎回デプロイ手順の60行が机の上に載る。** 図6の右側です。
 
 ![図7 CLAUDE.md 全部盛り問題](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-fig07.png)
+*図7｜何でもCLAUDE.mdに書くと、不要な情報まで常に読み込まれてしまう*
 
 **「必要なときだけ、必要な知識を渡したい」——この切実な悩みが、次の世代を生みます。**
 
 ### 第5世代：モジュール化（2025年後半）「道具を分ける」
+
 
 ここから怒涛の勢いで機能が出てきます。私が「AI界隈のスピード、やばくない？」と本気で思った時期です。
 
@@ -296,10 +306,12 @@ AIに「**ツール**」が与えられました。ファイルを読むツー�
 「ファイルを編集したら、必ずフォーマッタをかける」——これをお願いベースでAIに頼むと、忙しいときに忘れます。人間と同じです。Hooks にすると、**忘れようがありません**。
 
 ![図9 Skills vs Hooks](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-fig09.png)
+*図9｜AIの判断で使うSkills ／ 条件が揃えば必ず動くHooks*
 
 私が Hooks を使い始めたとき、いちばん効いたのは「**AIに守らせたいルールのうち、機械的に判定できるものは全部 Hooks に移す**」という発想の転換でした。ルールをお願い（プロンプト）で守らせようとするのをやめる。これはかなり効きます。
 
 #### 🔌 MCP（Model Context Protocol）——「社外システムへのアカウント発行」
+
 
 > **MCP**：AIツールを外部のデータソースやサービスに繋ぐための**オープン標準**。
 
@@ -415,9 +427,11 @@ MCPサーバーを繋ぎまくると、**ツールの定義だけで机の上が
 - 🏭 **動的ワークフロー**——ハーネスをAIが自分で組み立てる時代へ
 
 ![図13 前編→後編の橋渡し](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-fig13.png)
+*図13｜前編の用語理解から、後編のハーネスとオーケストレーションへ*
 
 <!-- TODO(リンク): 後編の公開後にURLを差し込む -->
 **👉 後編はこちら**（※公開後にリンクを差し込む）
+
 
 ---
 
