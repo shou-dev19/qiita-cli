@@ -1,5 +1,5 @@
 ---
-title: '【前編】AI駆動開発、用語で挫折していませんか？ ——歴史をたどれば「Skills」も「Hooks」も一本の線でつながる'
+title: 【前編】AI駆動開発、用語で挫折していませんか？ ——歴史をたどれば「Skills」も「Hooks」も一本の線でつながる
 tags:
   - ClaudeCode
   - AI駆動開発
@@ -7,8 +7,8 @@ tags:
   - LLM
   - 初心者
 private: true
-updated_at: ''
-id: null
+updated_at: '2026-08-03T20:36:34+09:00'
+id: e1583af614a573e4b245
 organization_url_name: null
 slide: false
 ignorePublish: false
