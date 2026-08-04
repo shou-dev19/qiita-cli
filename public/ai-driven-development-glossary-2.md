@@ -7,11 +7,13 @@ tags:
   - LLM
   - 初心者
 private: true
-updated_at: ''
-id: null
+updated_at: '2026-08-04T14:47:42+09:00'
+id: 0f4ee962b89a322eefc0
 organization_url_name: null
 slide: false
 ignorePublish: false
+posting_campaign_uuid: null
+agreed_posting_campaign_term: false
 ---
 
 ![アイキャッチ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-eyecatch.png)
