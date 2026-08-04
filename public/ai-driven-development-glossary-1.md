@@ -16,7 +16,7 @@ posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
 
-![アイキャッチ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-eyecatch.png)
+![アイキャッチ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-1/part1-eyecatch-v2.png)
 
 ## この記事は誰のために書いたのか
 
