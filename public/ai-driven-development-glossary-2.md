@@ -16,7 +16,7 @@ posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
 
-![アイキャッチ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-eyecatch.png)
+![アイキャッチ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-eyecatch-v2.png)
 
 ## この記事について（前編を読んでいない方へ）
 
@@ -122,7 +122,7 @@ AI駆動開発の「知らない単語の壁」を崩すことだけに絞って
 | プロンプトを工夫する | 機械的に判定できることは Hooks で強制し、手順を Skills に切り出す |
 | 結果を目視でレビューする | **AI自身が合否を判定できる仕組み（テスト等）を用意する** |
 
-この**「職場の作り込み」こそが、ハーネスエンジニアリング**です。
+この **「職場の作り込み」こそが、ハーネスエンジニアリング** です。
 
 ![図2 ハーネスエンジニアリングのビフォーアフター](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig02.png)
 
@@ -130,7 +130,7 @@ AI駆動開発の「知らない単語の壁」を崩すことだけに絞って
 
 正直まだ私も、ハーネスエンジニアリングに関しては、毎日頭を悩ませながら改善を入れていっている状態です。ただ、**いかに適切なハーネスを作り込み、いかにAIにループを回させ、人間が介在するポイントを減らしながら品質を保つか。** これを考えている時間がいちばん楽しいです！脳汁ドバドバです！笑
 
-コードを書く快感とは違う、**「仕組みが自動で回り始める快感」**があるんですよね。夜、寝る前に仕込んだループが、朝起きたら成果物を積み上げている。この体験には中毒性があると思います。
+コードを書く快感とは違う、 **「仕組みが自動で回り始める快感」** があるんですよね。夜、寝る前に仕込んだループが、朝起きたら成果物を積み上げている。この体験には中毒性があると思います。
 
 ---
 
@@ -170,14 +170,16 @@ AI駆動開発の「知らない単語の壁」を崩すことだけに絞って
 
 ### 代表的なオーケストレーションのパターン
 
-公式ブログでも紹介されている、覚えておくと便利な型がこれです。用語として出てきたときに「ああ、あれね」と思えれば十分。
+公式ブログの [すべてのタスクのためのハーネス（動的ワークフロー）](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code) では、6つの型が紹介されています。ここではそのうち、**特に名前を見かける機会の多い4つ**を挙げます。用語として出てきたときに「ああ、あれね」と思えれば十分です。
 
 | パターン | やること | 使いどころ |
 |---|---|---|
 | **Classify-and-act**<br>（分類して振る） | まず種類を判定し、適切な担当に回す | 問い合わせ・Issueのトリアージ |
-| **Fan-out-and-synthesize**<br>（広げて集める） | 分割して並列処理し、結果を統合 | 大量ファイルの一括調査 |
-| **Adversarial verification**<br>（敵対的検証） | 別のエージェントに批判・検証させる | コードレビュー、品質保証 |
-| **Tournament**<br>（トーナメント） | 複数案を作らせ、勝ち残りを選ぶ | 設計案・文案の比較検討 |
+| **Fan-out-and-synthesize**<br>（広げて集める） | 分割して並列処理し、結果を統合。**各担当がまっさらな机で作業できる**のが効く | 大量ファイルの一括調査 |
+| **Adversarial verification**<br>（敵対的検証） | 別のエージェントに、基準に照らして批判・検証させる | コードレビュー、品質保証 |
+| **Tournament**<br>（トーナメント） | **同じ課題**を複数エージェントに**別々のアプローチ**で解かせ、判定役が勝ち抜き戦で1つ選ぶ | 設計方針が複数ありうるときの比較検討 |
+
+残り2つは **Generate-and-filter**（案をたくさん出させ、基準でふるいにかける）と **Loop until done**（停止条件を満たすまで繰り返す）。名前のとおりなので、頭の片隅に置いておけば十分です。
 
 ![図5 4つのオーケストレーションパターン](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig05.png)
 
