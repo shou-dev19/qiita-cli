@@ -62,4 +62,4 @@ Pinning the URL to `main` means re-committing a file under the same name updates
 
 ## Dev container
 
-`.devcontainer/setup.sh` installs the CLI agents and runs `npm install @qiita/qiita-cli --save-dev` on container create, which is why `package.json`/`package-lock.json` sometimes show as modified after a rebuild. Articles are authored in Japanese; keep new content and commit messages consistent with that.
+`.devcontainer/setup.sh` (in the *parent* repo, not this one) installs the CLI agents and then runs `npm ci` against this directory on container create. `node_modules/` is gitignored, so without that step there is no local `qiita` binary and `npx qiita preview` silently resolves to an unrelated npm package instead of failing usefully — if preview misbehaves, check `qiita-cli/node_modules/` exists before debugging anything else. `package-lock.json` is committed and `npm ci` installs from it, so neither it nor `package.json` should show as modified after a rebuild; if they do, something changed the dependency set. Articles are authored in Japanese; keep new content and commit messages consistent with that.
