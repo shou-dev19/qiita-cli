@@ -8,68 +8,80 @@
       "state": "embedded"
     },
     {
-      "id": "part2-fig01",
+      "id": "part2-r2-fig01",
       "label": "図1 ハーネスの三層構造",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig02",
+      "id": "part2-r2-fig02",
       "label": "図2 ハーネスエンジニアリングのビフォーアフター",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig03",
+      "id": "part2-r2-fig03",
       "label": "図3 検証ループ",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig04",
+      "id": "part2-r2-fig04",
       "label": "図4 3重の輪",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig05",
-      "label": "図5 オーケストレーター",
+      "id": "part2-r2-fig05",
+      "label": "図5 人間というボトルネックが外れる",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig06",
-      "label": "図6 4つのオーケストレーションパターン",
+      "id": "part2-r2-fig06",
+      "label": "図6 自動化のコストカーブ",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig07",
-      "label": "図7 自分で自分をレビューする図",
+      "id": "part2-r2-fig07",
+      "label": "図7 オーケストレーター",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig08",
-      "label": "図8 動的ワークフロー",
+      "id": "part2-r2-fig08",
+      "label": "図8 4つのオーケストレーションパターン",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig09",
-      "label": "図9 プロンプトインジェクション",
+      "id": "part2-r2-fig09",
+      "label": "図9 自分で自分をレビューする図",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig10",
-      "label": "図10 全体像（前編・後編の総まとめ）",
+      "id": "part2-r2-fig10",
+      "label": "図10 動的ワークフロー",
       "caption": "",
       "state": "embedded"
     },
     {
-      "id": "part2-fig11",
-      "label": "図11 締めのイラスト",
+      "id": "part2-r2-fig11",
+      "label": "図11 プロンプトインジェクション",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-r2-fig12",
+      "label": "図12 全体像（前編・後編の総まとめ）",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-r2-fig13",
+      "label": "図13 締めのイラスト",
       "caption": "",
       "state": "embedded"
     }

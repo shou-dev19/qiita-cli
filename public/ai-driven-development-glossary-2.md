@@ -96,7 +96,7 @@ https://qiita.com/shou-dev19/items/e1583af614a573e4b245
 
 ハーネスが提供しているのは、ファイルへのアクセス、シェルの実行、権限のゲート、記憶の読み込み、そして行動をつなぐループ（前編の図5＝エージェンティックループ）です。
 
-![図1 ハーネスの三層構造](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig01.png)
+![図1 ハーネスの三層構造](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig01.png)
 
 *図1｜中心にモデル、その外側にツールと実行環境。この全体がハーネス*
 
@@ -127,7 +127,7 @@ https://qiita.com/shou-dev19/items/e1583af614a573e4b245
 
 この **「職場の作り込み」こそが、ハーネスエンジニアリング** です。
 
-![図2 ハーネスエンジニアリングのビフォーアフター](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig02.png)
+![図2 ハーネスエンジニアリングのビフォーアフター](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig02.png)
 
 *図2｜AIを賢くするのではなく、AIが賢く働ける環境を作る*
 
@@ -149,7 +149,7 @@ https://qiita.com/shou-dev19/items/e1583af614a573e4b245
 
 逆に、テストという合格基準を渡せば、**AIは通るまで自分で直し続けます**。これがループの燃料になります。
 
-![図3 検証ループ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig03.png)
+![図3 検証ループ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig03.png)
 
 *図3｜合格基準を渡すと、AIは合格するまで働く*
 
@@ -177,7 +177,7 @@ https://qiita.com/shou-dev19/items/e1583af614a573e4b245
 | **検証ループ**<br>（真ん中） | テストが合否を返す | 数分〜数十分 | 合格したとき |
 | **ループエンジニアリング**<br>（外側） | **人間が設計する** | 数時間〜一晩 | **停止条件を満たしたとき** |
 
-![図4 3重の輪](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig04.png)
+![図4 3重の輪](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig04.png)
 
 *図4｜内側は自動で回る。人間が設計するのは、いちばん外の輪*
 
@@ -192,6 +192,10 @@ https://qiita.com/shou-dev19/items/e1583af614a573e4b245
 - 続けていいか承認する → **権限ルールで代替できる**
 
 つまり——**ハーネスを作り込むほど、人間が戻ってこなければならないポイントが減っていく。** 前編から言い続けている「作業から設計へ」の、これが実体です。
+
+![図5 人間というボトルネックが外れる](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig05.png)
+
+*図5｜人間が戻される理由を、ひとつずつ仕組みに置き換えていく*
 
 とはいえ、この捉え方は私が思いついたものではありません。もとになった発言があります。
 
@@ -223,6 +227,10 @@ Claude Code を作った **Boris Cherny**（Anthropic、Claude Code の責任者
 5〜7割の自動化は、正直かなり軽いです。最近は**ループの仕組みそのものを最新モデルに作らせる**こともできます。「こういう作業を繰り返したいので、回す仕組みを作って」で、だいたい形になります。
 
 一方、8割から先——例外処理、失敗からの復帰、判断が割れるケース——は急に重くなります。**作り込みにかけた時間が、削減できた時間を上回り始めます。**
+
+![図6 自動化のコストカーブ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig06.png)
+
+*図6｜最後の3割は、削減できる時間より作り込む時間のほうが高くつく*
 
 **2. 作り込んだ仕組みは、モデルの性能に追い抜かれる**
 
@@ -260,9 +268,9 @@ Claude Code を作った **Boris Cherny**（Anthropic、Claude Code の責任者
 
 要はPMであり、指揮者です。オーケストラの指揮者が自分では楽器を弾かないように、オーケストレーターは自分では手を動かさず、**分解・割り当て・統合**に徹します。
 
-![図5 オーケストレーター](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig05.png)
+![図7 オーケストレーター](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig07.png)
 
-*図5｜自分では弾かない。全体を合わせる*
+*図7｜自分では弾かない。全体を合わせる*
 
 ### 代表的なオーケストレーションのパターン
 
@@ -277,9 +285,9 @@ Claude Code を作った **Boris Cherny**（Anthropic、Claude Code の責任者
 
 残り2つは **Generate-and-filter**（案をたくさん出させ、基準でふるいにかける）と **Loop until done**（停止条件を満たすまで繰り返す）。後者は、さっきのループエンジニアリングをオーケストレーションの型として名前を付けたもの、と考えてもらえれば十分です。
 
-![図6 4つのオーケストレーションパターン](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig06.png)
+![図8 4つのオーケストレーションパターン](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig08.png)
 
-*図6｜振り分ける／広げて集める／批判させる／勝ち残らせる*
+*図8｜振り分ける／広げて集める／批判させる／勝ち残らせる*
 
 ### なぜ、わざわざ分けるのか
 
@@ -295,9 +303,9 @@ Claude Code を作った **Boris Cherny**（Anthropic、Claude Code の責任者
 
 だから**コンテキストを物理的に分離する**。書いた本人とは別の、事情を知らないエージェントにレビューさせる。これが「敵対的検証」の意味であり、オーケストレーションが必要な理由です。
 
-![図7 自分で自分をレビューする図](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig07.png)
+![図9 自分で自分をレビューする図](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig09.png)
 
-*図7｜レビューは、書いた本人以外にやらせる*
+*図9｜レビューは、書いた本人以外にやらせる*
 
 前編で「Subagent はコンテキスト節約テクニック」と説明しましたが、実はもう一つの効能がこれです。**机を分けることは、視点を分けることでもある。**
 
@@ -311,9 +319,9 @@ Claude Code を作った **Boris Cherny**（Anthropic、Claude Code の責任者
 
 いま起きているのは、**AIがタスクに合わせて、その場でハーネスを組み立てる**という段階です。公式ブログでは「Claude が、目の前のタスク専用のハーネスをその場で書けるようになった」と表現されています。
 
-![図8 動的ワークフロー](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig08.png)
+![図10 動的ワークフロー](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig10.png)
 
-*図8｜ハーネスを作る側も、AIになりつつある*
+*図10｜ハーネスを作る側も、AIになりつつある*
 
 同じ流れの中に **Agent Teams**（独立したセッション同士がチームを組み、メンバー同士が直接やり取りする形）もあります。サブエージェントが「親に要約を返す部下」だったのに対し、こちらは横に並んだチームメイト、というイメージです。
 
@@ -344,9 +352,9 @@ AIエージェントは Web ページやファイルの中身を読みます。�
 
 これがプロンプトインジェクションです。SQLインジェクションの構造とよく似ていますね。データとして読ませたつもりのものが、命令として解釈されてしまう。
 
-![図9 プロンプトインジェクション](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig09.png)
+![図11 プロンプトインジェクション](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig11.png)
 
-*図9｜AIが読むものは、全部"入力"。信用できるとは限らない*
+*図11｜AIが読むものは、全部"入力"。信用できるとは限らない*
 
 :::note warn
 だからこそ、権限モードやサンドボックスが用意されています。**「便利さ」と「権限の広さ」は完全にトレードオフ**だと理解した上で、意図的に選ぶ。ここは自動化を進めるほど重要になります。
@@ -358,9 +366,9 @@ AIエージェントは Web ページやファイルの中身を読みます。�
 
 前編・後編と長くなりましたが、伝えたかったことは3つです。
 
-![図10 全体像（前編・後編の総まとめ）](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig10.png)
+![図12 全体像（前編・後編の総まとめ）](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig12.png)
 
-*図10｜前編・後編で登場した用語の全体像*
+*図12｜前編・後編で登場した用語の全体像*
 
 ### 1️⃣ 用語は「困りごとへの回答」として覚える
 
@@ -419,9 +427,9 @@ AIエージェントは Web ページやファイルの中身を読みます。�
 - 📕 [すべてのタスクのためのハーネス（動的ワークフロー）](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code)
 - 📓 [Addy Osmani, "Loop Engineering"](https://addyosmani.com/blog/loop-engineering/) ← ループの話をもう一歩踏み込みたい方へ（英語）
 
-![図11 締めのイラスト](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-fig11.png)
+![図13 締めのイラスト](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/ai-driven-development-glossary-2/part2-r2-fig13.png)
 
-*図11｜あとは、実際に手を動かしてみるだけ*
+*図13｜あとは、実際に手を動かしてみるだけ*
 
 **👈 前編を読んでいない方はこちら**
 
