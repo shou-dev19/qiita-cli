@@ -12,6 +12,10 @@ node_modules
 # 記事のソース素材（公開対象は public/ のみ）
 input/
 
+# 図版生成の中間物（原寸画像は比率検証用、ログは実行記録）
+images/**/*.original.png
+images/**/generate.log
+
 # エージェント関連のローカル設定
 .claude/settings.local.json
 CLAUDE.local.md

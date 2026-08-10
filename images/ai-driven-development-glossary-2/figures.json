@@ -1,0 +1,77 @@
+{
+  "slug": "ai-driven-development-glossary-2",
+  "figures": [
+    {
+      "id": "part2-eyecatch-v2",
+      "label": "アイキャッチ",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig01",
+      "label": "図1 ハーネスの三層構造",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig02",
+      "label": "図2 ハーネスエンジニアリングのビフォーアフター",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig03",
+      "label": "図3 検証ループ",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig04",
+      "label": "図4 3重の輪",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig05",
+      "label": "図5 オーケストレーター",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig06",
+      "label": "図6 4つのオーケストレーションパターン",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig07",
+      "label": "図7 自分で自分をレビューする図",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig08",
+      "label": "図8 動的ワークフロー",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig09",
+      "label": "図9 プロンプトインジェクション",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig10",
+      "label": "図10 全体像（前編・後編の総まとめ）",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "part2-fig11",
+      "label": "図11 締めのイラスト",
+      "caption": "",
+      "state": "embedded"
+    }
+  ]
+}
