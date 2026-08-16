@@ -1,3 +1,16 @@
+---
+title: プログラミング言語を覚える時代は、そろそろ終わるかもしれない
+tags:
+  - AI駆動開発
+  - ClaudeCode
+  - 生成AI
+private: true
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: true
+---
 # プログラミング言語を覚える時代は、そろそろ終わるかもしれない
 
 > **タイトル案（お好みで）**
