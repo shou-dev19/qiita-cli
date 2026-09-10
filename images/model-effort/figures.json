@@ -1,0 +1,47 @@
+{
+  "slug": "model-effort",
+  "figures": [
+    {
+      "id": "eyecatch",
+      "label": "アイキャッチ",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "fig01",
+      "label": "図1 model＝地頭、effort＝真面目度",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "fig02",
+      "label": "ユーザー提供のスクリーンショットを挿入予定",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "fig03",
+      "label": "ユーザー提供のスクリーンショットを挿入予定",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "fig04",
+      "label": "図2 model×effortの4象限",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "fig05",
+      "label": "図3 コスト＝時給×拘束時間",
+      "caption": "",
+      "state": "embedded"
+    },
+    {
+      "id": "fig06",
+      "label": "図4 実務での使い分けフローチャート",
+      "caption": "",
+      "state": "embedded"
+    }
+  ]
+}
