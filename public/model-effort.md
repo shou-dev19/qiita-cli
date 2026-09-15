@@ -7,7 +7,7 @@ tags:
   - ClaudeCode
   - Anthropic
 private: false
-updated_at: '2026-09-16T07:05:02+09:00'
+updated_at: "2026-09-16T07:05:02+09:00"
 id: 2d73cd63d2bf76b4dea9
 organization_url_name: null
 slide: false
@@ -16,9 +16,7 @@ posting_campaign_uuid: null
 agreed_posting_campaign_term: false
 ---
 
-![アイキャッチ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/model-effort/eyecatch.png)
-
-_アイキャッチ｜そのAI、片方のダイヤルしか回していないのでは？_
+![アイキャッチ](https://raw.githubusercontent.com/shou-dev19/qiita-cli/main/images/model-effort/eyecatch-v2.png)
 
 ## 対象読者
 
